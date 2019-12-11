@@ -60,15 +60,15 @@ function preload() {
   modules[4] = loadImage('pscircle3.jpg');
   modules[5] = loadImage('pscircle3.jpg');
   modules[6] = loadImage('pscircle4.jpg');
-  modules[7] = loadImage('pscircle4.jpg');
+  modules[7] = loadImage('psredcircle1.jpg');
     modules[8] = loadImage('pscircle5.jpg');
       modules[9] = loadImage('pscircle5.jpg');
         modules[10] = loadImage('pscircle6.jpg');
-          modules[11] = loadImage('pscircle6.jpg');
+          modules[11] = loadImage('psredcircle1.jpg');
             modules[12] = loadImage('pscircle7.jpg');
               modules[13] = loadImage('pscircle7.jpg');
                 modules[14] = loadImage('pscircle1.jpg');
-                  modules[15] = loadImage('pscircle1.jpg');
+                  modules[15] = loadImage('psredcircle1.jpg');
 
 }
 
@@ -142,6 +142,7 @@ function drawGrid() {
   }
 }
 
+//function to draw circles using north west vars
 function drawModules() {
   for (var gridX = 0; gridX < gridResolutionX - 1; gridX++) {
     for (var gridY = 0; gridY < gridResolutionY - 1; gridY++) {
@@ -172,7 +173,11 @@ function drawModules() {
       }
     }
   }
+
+//if (var decimalResult = 16){
+  //image('psredcircle1.jpg')
 }
+
 
 function keyPressed() {
   if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
