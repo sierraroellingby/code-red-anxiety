@@ -90,7 +90,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(20);
 
   if (mouseIsPressed) {
     if (mouseButton == LEFT) setTile();
@@ -132,9 +132,9 @@ function drawGrid() {
     for (var gridY = 0; gridY < gridResolutionY; gridY++) {
       var posX = tileSize * gridX - tileSize / 2;
       var posY = tileSize * gridY - tileSize / 2;
-      fill(255);
+      fill(500);
       if (isDebugMode) {
-        if (tiles[gridX][gridY] == 1) fill(220);
+        if (tiles[gridX][gridY] == 1) fill(500);
       }
       rect(posX, posY, tileSize, tileSize);
     }
@@ -165,7 +165,7 @@ function drawModules() {
         image(modules[decimalResult], posX, posY, tileSize, tileSize);
 
         if (isDebugMode) {
-          fill(150);
+          fill(20);
           text(decimalResult + '\n' + binaryResult, posX, posY);
         }
       }
