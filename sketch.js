@@ -55,18 +55,18 @@ function preload() {
   // METHOD 2: Read files one-by-one
   modules[0] = loadImage('pscircle1.jpg');
   modules[1] = loadImage('pscircle1.jpg');
-  modules[2] = loadImage('pscircle1.jpg');
-  modules[3] = loadImage('pscircle1.jpg');
-  modules[4] = loadImage('pscircle1.jpg');
-  modules[5] = loadImage('pscircle1.jpg');
-  modules[6] = loadImage('pscircle1.jpg');
-  modules[7] = loadImage('pscircle1.jpg');
-    modules[8] = loadImage('pscircle1.jpg');
-      modules[9] = loadImage('pscircle1.jpg');
-        modules[10] = loadImage('pscircle1.jpg');
-          modules[11] = loadImage('pscircle1.jpg');
-            modules[12] = loadImage('pscircle1.jpg');
-              modules[13] = loadImage('pscircle1.jpg');
+  modules[2] = loadImage('pscircle2.jpg');
+  modules[3] = loadImage('pscircle2.jpg');
+  modules[4] = loadImage('pscircle3.jpg');
+  modules[5] = loadImage('pscircle3.jpg');
+  modules[6] = loadImage('pscircle4.jpg');
+  modules[7] = loadImage('pscircle4.jpg');
+    modules[8] = loadImage('pscircle5.jpg');
+      modules[9] = loadImage('pscircle5.jpg');
+        modules[10] = loadImage('pscircle6.jpg');
+          modules[11] = loadImage('pscircle6.jpg');
+            modules[12] = loadImage('pscircle7.jpg');
+              modules[13] = loadImage('pscircle7.jpg');
                 modules[14] = loadImage('pscircle1.jpg');
                   modules[15] = loadImage('pscircle1.jpg');
 
@@ -90,7 +90,7 @@ function setup() {
 }
 
 function draw() {
-  background(20);
+  background(500);
 
   if (mouseIsPressed) {
     if (mouseButton == LEFT) setTile();
@@ -128,11 +128,12 @@ function unsetTile() {
 }
 
 function drawGrid() {
+  fill(500);
   for (var gridX = 0; gridX < gridResolutionX; gridX++) {
     for (var gridY = 0; gridY < gridResolutionY; gridY++) {
       var posX = tileSize * gridX - tileSize / 2;
       var posY = tileSize * gridY - tileSize / 2;
-      fill(500);
+    //  fill(500);
       if (isDebugMode) {
         if (tiles[gridX][gridY] == 1) fill(500);
       }
@@ -165,7 +166,7 @@ function drawModules() {
         image(modules[decimalResult], posX, posY, tileSize, tileSize);
 
         if (isDebugMode) {
-          fill(20);
+          fill(200);
           text(decimalResult + '\n' + binaryResult, posX, posY);
         }
       }
