@@ -79,7 +79,7 @@ function setup() {
   cursor(CROSS);
   rectMode(CENTER);
   imageMode(CENTER);
-  strokeWeight(0.15);
+  strokeWeight(0.02);
   textSize(8);
   textAlign(CENTER, CENTER);
 
