@@ -53,22 +53,22 @@ function preload() {
   // }
 
   // METHOD 2: Read files one-by-one
-  modules[0] = loadImage('finalcircle2.5.jpg');
-  modules[1] = loadImage('finalcircle2.5.jpg');
-  modules[2] = loadImage('finalcircle2.5.jpg');
-  modules[3] = loadImage('finalprojcircle2.jpg');
-  modules[4] = loadImage('finalprojcircle2.jpg');
-  modules[5] = loadImage('finalprojcircle2.jpg');
-  modules[6] = loadImage('finalcircle3.jpg');
-  modules[7] = loadImage('finalcircle3.jpg');
-  modules[8] = loadImage('finalcircle3.jpg');
-  modules[9] = loadImage('finalprojcircle1.jpg');
-  modules[10] = loadImage('finalprojcircle1.jpg');
-  modules[11] = loadImage('finalprojcircle1.jpg');
-  modules[12] = loadImage('finalprojcircle4.jpg');
-  modules[13] = loadImage('finalprojcircle4.jpg');
-  modules[14] = loadImage('finalprojcircle4.jpg');
-  modules[15] = loadImage('finalprojcircle4.jpg');
+  modules[0] = loadImage('pscircle1.jpg');
+  modules[1] = loadImage('pscircle1.jpg');
+  modules[2] = loadImage('pscircle1.jpg');
+  modules[3] = loadImage('pscircle1.jpg');
+  modules[4] = loadImage('pscircle1.jpg');
+  modules[5] = loadImage('pscircle1.jpg');
+  modules[6] = loadImage('pscircle1.jpg');
+  modules[7] = loadImage('pscircle1.jpg');
+    modules[8] = loadImage('pscircle1.jpg');
+      modules[9] = loadImage('pscircle1.jpg');
+        modules[10] = loadImage('pscircle1.jpg');
+          modules[11] = loadImage('pscircle1.jpg');
+            modules[12] = loadImage('pscircle1.jpg');
+              modules[13] = loadImage('pscircle1.jpg');
+                modules[14] = loadImage('pscircle1.jpg');
+                  modules[15] = loadImage('pscircle1.jpg');
 
 }
 
